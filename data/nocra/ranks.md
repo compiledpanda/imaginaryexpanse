@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Nocra Ranks
+tags: data-nocra
 ---
 
 # Ranks
