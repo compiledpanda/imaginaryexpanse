@@ -1,12 +1,8 @@
 ---
 layout: base
-title: Nocra
-tags: data
+title: Tales
 ---
-# Nocra
-A species.
-
 # Contents
-<% collections['data.nocra'].forEach((e) => { %>
+<% collections['tales'].forEach((e) => { %>
 <a href="<%- e.url %>"><%= e.data.title %></a><br />
 <% }); %>
