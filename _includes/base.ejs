@@ -17,6 +17,14 @@ title: Imaginary Expanse
     </nav>
   </header>
   <main>
+    <!-- Breadcrumbs -->
+    <%_ page.url.split('/').filter((e) => e != '').forEach((e, i, arr) => { _%>
+      <%_ if(i != arr.length-1) { _%>
+        <a href="/<%= arr.slice(0, i+1).join('/') %>/"><%= e.charAt(0).toUpperCase() + e.substring(1) %></a> /
+      <%_ } else { _%>
+        <%= e.charAt(0).toUpperCase() + e.substring(1) %>
+      <%_ } _%>
+    <%_ }); _%>
     <%- content %>
   </main>
   <footer></footer>

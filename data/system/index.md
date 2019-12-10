@@ -1,10 +1,11 @@
 ---
 layout: base
-title: Data
+title: Systems
+tags: data
 ---
-# Contents
+# Systems
 <ul>
-<% collections['data'].forEach((e) => { %>
+<% collections['data.system'].forEach((e) => { %>
 <li><a href="<%- e.url %>"><%= e.data.title %></a></li>
 <% }); %>
 </ul>
